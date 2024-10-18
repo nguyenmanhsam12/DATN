@@ -83,7 +83,8 @@ class AuthController extends Controller
             return response()->json([
                 'message' => 'Login Success',
                 'token' => $token,
-                'roles' => $roles
+                'roles' => $roles,
+                
             ]);
             
         } catch (\Throwable $th) {
